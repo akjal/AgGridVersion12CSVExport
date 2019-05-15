@@ -1,0 +1,13 @@
+<button (click)="loadData()">load data</button>
+<button (click)="exportCSV()">Export CSV</button>
+<div>
+<ag-grid-angular 
+    style="width: 500px; height: 500px;" 
+    class="ag-blue"   
+    [columnDefs]="columnDefs"
+    [rowModelType]="rowModelType"
+    [cacheBlockSize]="cacheBlockSize"
+      (gridReady)="onGridReady($event)"
+    >
+</ag-grid-angular>
+</div>
